@@ -54,7 +54,7 @@ namespace SplittedStream
                     long p = this.CurrentStream.Position;
                     for (int i = 0; i < _currentStreamIdx; i++)
                     {
-                        p += this.CurrentStream.Length;
+                        p += this._streams[i].Length;
                     }
                     return p;
                 }
