@@ -104,7 +104,7 @@ powershell.exe "&amp; .\create7z.ps1"
 )
 
 mkdir $(TargetDir)\TestFiles
-robocopy .. $(TargetDir)\TestFiles /S
+robocopy .. $(TargetDir)\TestFiles /S /PURGE
 
 exit /b 0</PostBuildEvent>
   </PropertyGroup>
